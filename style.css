@@ -1,1 +1,96 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
+body{
+font-family:'Poppins',sans-serif;
+background:#070814;
+color:white;
+overflow:hidden;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+position:relative;
+z-index:2;
+text-align:center;
+max-width:700px;
+padding:25px;
+}
+
+.date{
+letter-spacing:4px;
+font-size:13px;
+color:#9fa8ff;
+margin-bottom:25px;
+text-transform:uppercase;
+}
+
+h1{
+font-size:64px;
+line-height:1.1;
+font-weight:700;
+margin-bottom:20px;
+}
+
+h1 span{
+color:#8c7dff;
+}
+
+.subtitle{
+font-size:18px;
+line-height:1.8;
+color:#cfcfcf;
+margin-bottom:45px;
+}
+
+button{
+padding:16px 38px;
+font-size:17px;
+border:none;
+border-radius:50px;
+background:linear-gradient(90deg,#8c7dff,#5b7cff);
+color:white;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 0 30px rgba(118,107,255,.4);
+}
+
+button:hover{
+transform:translateY(-4px);
+box-shadow:0 0 40px rgba(118,107,255,.6);
+}
+
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+background:
+radial-gradient(circle at 20% 30%,white 1px,transparent 2px),
+radial-gradient(circle at 70% 20%,white 1px,transparent 2px),
+radial-gradient(circle at 40% 80%,white 1px,transparent 2px),
+radial-gradient(circle at 80% 70%,white 1px,transparent 2px),
+radial-gradient(circle at 15% 60%,white 1px,transparent 2px);
+background-size:300px 300px;
+animation:moveStars 60s linear infinite;
+opacity:.7;
+}
+
+@keyframes moveStars{
+
+from{
+transform:translateY(0);
+}
+
+to{
+transform:translateY(-300px);
+}
+
+}
